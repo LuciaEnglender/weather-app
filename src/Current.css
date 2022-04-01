@@ -1,0 +1,44 @@
+.currentAll{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid none;
+    margin-right:10px;
+    padding: 15px;
+    border-radius: 30px;
+    background-color:rgba(207, 198, 198, 0.425) ;
+}
+
+.descrip{
+    font-size: 20px;
+}
+
+.iconAndDescription{
+    width: 50%;
+    margin-right: 25%;
+    
+}
+
+.infoWeather{
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 20px;
+
+}
+
+.icon{
+    margin-top: 10%;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+.noCities{
+    font-size: 40px;
+    margin-top: 25%;
+}

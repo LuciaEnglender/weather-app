@@ -1,7 +1,35 @@
 .App {
+  display: flex;
+  flex-direction: row;
   text-align: center;
+  background-image: url('./fondo.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  color: white
 }
 
+.nameAndSearch{
+  background-color: #16171a46;
+  width: 50%;
+}
+
+.search{
+  margin-top: 25%;
+  
+}
+
+.horas{
+  color: white;
+  font-size: 60px;
+  margin-top: 25%;
+}
+
+.nameCity{
+  
+  color: white;
+  font-size: 60px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -12,7 +40,13 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.cards{
+  background-color: #16171a46;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,6 +62,34 @@
   color: #61dafb;
 }
 
+.Hourly{
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  margin-right: 10px;
+}
+
+.Hourly::-webkit-scrollbar{
+  
+  background-color: rgba(255, 255, 255, 0.466);
+}
+.Hourly::-webkit-scrollbar-thumb{
+  background-color: #444;
+}
+.Daily {
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+  overflow-x: auto;
+
+}
+.Daily::-webkit-scrollbar{
+  
+  background-color: rgba(255, 255, 255, 0.466);
+}
+.Daily::-webkit-scrollbar-thumb{
+  background-color: #444;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

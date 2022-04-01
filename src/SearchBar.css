@@ -1,0 +1,18 @@
+.busquedaInput{
+    background-color: rgba(255, 255, 255, 0.253);
+    border: 1px solid white;
+    height: 30px;
+    width: 400px;
+    font-size: 20px;
+    color: white;
+}
+
+.buton{
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.253);
+    border: 1px solid white;
+    margin-right: 2px;
+}
+.gg-search{
+    color: white
+}

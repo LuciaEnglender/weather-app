@@ -1,0 +1,18 @@
+.dayAll{
+    font-size: 20px;
+    background-color:rgba(207, 198, 198, 0.425) ;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.imagen{
+    background-color: rgba(255, 255, 255, 0.466);
+    border-radius: 50%;
+}
+.tempMinMax{
+    display: flex;
+   
+}
+.temperaturaDaily{
+    margin-right: 5px;
+    margin-left: 5px;
+}
