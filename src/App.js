@@ -46,7 +46,7 @@ function App() {
   async function onSearch(city) {
     try {
       const currentWeatherInfo = await axios.get(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city}&lang=es&appid=${process.env.API_KEY}&units=metric`
+        `http://api.openweathermap.org/data/2.5/weather?q=${city}&lang=es&appid=${process.env.REACT_APP_API_KEY}&units=metric`
       );
 
       if (currentWeatherInfo) {
@@ -57,7 +57,7 @@ function App() {
         };
 
         const extendedWeather = await axios.get(
-          `https://api.openweathermap.org/data/2.5/onecall?lat=${ciudad.latitud}&lon=${ciudad.longitud}&lang=es&appid=${process.env.API_KEY}&units=metric`
+          `https://api.openweathermap.org/data/2.5/onecall?lat=${ciudad.latitud}&lon=${ciudad.longitud}&lang=es&appid=${process.env.REACT_APP_API_KEY}&units=metric`
         );
 
         setCity(ciudad.name);
