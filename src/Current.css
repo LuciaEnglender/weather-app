@@ -42,3 +42,10 @@
     font-size: 40px;
     margin-top: 25%;
 }
+
+@media (max-width: 900px) {
+    .noCities{
+        margin-top: 0%;
+    }
+    
+}

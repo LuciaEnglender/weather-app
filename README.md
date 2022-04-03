@@ -11,4 +11,4 @@ Get the current weather of any city in this weather app
 JavaScript, ReactJS, Redux.
 Style made only in CSS.
 
-### Made with <3 by Lucia Englender
+### Made with 💜 by Lucia Englender

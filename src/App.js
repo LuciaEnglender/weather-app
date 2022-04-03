@@ -6,6 +6,7 @@ import Current from "./Current";
 import Hourly from "./Hourly";
 import Daily from "./Daily";
 
+
 function App() {
   const [current, setCurrent] = useState([]);
   const [daily, setDaily] = useState([]);
@@ -46,7 +47,7 @@ function App() {
   async function onSearch(city) {
     try {
       const currentWeatherInfo = await axios.get(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city}&lang=es&appid=5e8c57dc77b7c3b4ebd018ffa6899125&units=metric`
+        `http://api.openweathermap.org/data/2.5/weather?q=${city}&lang=es&appid=${process.env.REACT_APP_API_KEY}&units=metric`
       );
 
       if (currentWeatherInfo) {
@@ -57,7 +58,7 @@ function App() {
         };
 
         const extendedWeather = await axios.get(
-          `https://api.openweathermap.org/data/2.5/onecall?lat=${ciudad.latitud}&lon=${ciudad.longitud}&lang=es&appid=5e8c57dc77b7c3b4ebd018ffa6899125&units=metric`
+          `https://api.openweathermap.org/data/2.5/onecall?lat=${ciudad.latitud}&lon=${ciudad.longitud}&lang=es&appid=${process.env.REACT_APP_API_KEY}&units=metric`
         );
 
         setCity(ciudad.name);
