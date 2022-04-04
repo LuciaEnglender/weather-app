@@ -54,14 +54,15 @@
   }
   .cards{
     background-color: #16171a46;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
   .nameAndSearch{
     background-color: #16171a46;
-    width:100%;
+    width:100vw;
+    height: 100vh;
   }
   .horas{
     color: white;
