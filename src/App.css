@@ -89,6 +89,18 @@
   .App{
     width: 400px;
   }
+  .nameAndSearch{
+    background-color: #16171a46;
+    width:100vw;
+    height: 100vh;
+  }
+  .cards{
+    background-color: #16171a46;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 .App-header {
   background-color: #282c34;
