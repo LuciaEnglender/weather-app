@@ -48,7 +48,7 @@ function App() {
   async function onSearch(city) {
     try {
       const currentWeatherInfo = await axios.get(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city}&lang=es&appid=${API_KEY}&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=es&appid=${API_KEY}&units=metric`
       );
 
       if (currentWeatherInfo) {
